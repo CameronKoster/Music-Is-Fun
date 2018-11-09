@@ -1,0 +1,8 @@
+.bg-image {
+background-attachment: fixed;
+height: 100vh;
+  background-image: url(/app/Images/cassette-background.jpg);
+  background-size: cover;
+  
+
+}

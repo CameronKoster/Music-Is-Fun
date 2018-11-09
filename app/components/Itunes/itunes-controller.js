@@ -5,11 +5,27 @@ import ItunesService from "./itunes-service.js";
 const itunesService = new ItunesService()
 
 function drawSongs(results) {
-  console.log(results)
   //YOUR CODING STARTS HERE
+  let songs = itunesService.getMusicByArtist()
+  let template = ""
+  results.forEach(song => {
+    template += `
+<div>
+   <img src="${song.albumArt}">
+   <h1>${song.artist}</h1>
+    <h2>${song.title}</h2>
+    <h3>${song.collection}</h3>
+    <h4>${song.price}</h4>
+    <audio controls>
+       <source src="${song.preview}" type="audio/mp3">
+    </audio>
+</div>
+  `
+  })
 
 
 
+  document.getElementById("songs").innerHTML = template
 }
 
 
