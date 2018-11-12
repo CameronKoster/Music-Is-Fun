@@ -27,6 +27,9 @@ border: 2px solid rgb(253, 82, 158);
 margin-right: 20px;
 height: 75px;
 }
+.input-box::placeholder {
+  color: rgb(253, 82, 159);
+}
 
 .form-inline {
   margin-top: 10px;

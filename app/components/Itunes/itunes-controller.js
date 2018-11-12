@@ -10,6 +10,7 @@ function drawSongs(results) {
   let template = ""
   results.forEach(song => {
     template += `
+    <div class="col-6">
     <img src="${song.albumArt}">
     <h1>${song.artist}</h1>
     <h2>${song.title}</h2>
@@ -19,10 +20,10 @@ function drawSongs(results) {
     <source src="${song.preview}" type="audio/mp3">
     <source src="${song.preview}" type="audio/ogg">
     </audio>
+    </div>
   `
   })
   document.getElementById("songs").innerHTML = template
-  document.getElementById("songs2").innerHTML = template
 }
 
 
