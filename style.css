@@ -3,6 +3,63 @@ background-attachment: fixed;
 height: 100vh;
   background-image: url(/app/Images/cassette-background.jpg);
   background-size: cover;
-  
+}
 
+/* How to put hover effect without changing button styling? */
+#get-music-button { 
+font-family: 'Cabin Sketch', cursive;
+font-size: 35px;
+background-color: rgb(105, 253, 253);
+color: rgb(253, 82, 158);
+border: 2px solid rgb(253, 82, 158); 
+height: 75px;
+}
+
+
+/* Why input box text color won't change? */
+.input-box {
+font-family: 'Cabin Sketch', cursive;
+font-size: 35px;
+text-align: center;
+color: rgb(253, 82, 158);
+background-color: rgb(105, 253, 253);
+border: 2px solid rgb(253, 82, 158);
+margin-right: 20px;
+height: 75px;
+}
+
+.form-inline {
+  margin-top: 10px;
+  margin-left: 38px;
+}
+
+p {
+font-family: 'Cabin Sketch', cursive;
+font-size: 95px;
+color: rgb(253, 82, 158);
+margin-top: 38px;
+margin-left: 40px;
+}
+h1 {
+ color: rgb(253, 82, 158); 
+ font-family: 'Cabin Sketch', cursive;
+}
+
+h2 {
+ color: rgb(253, 82, 158); 
+ font-family: 'Cabin Sketch', cursive;
+}
+
+h3 {
+ color: rgb(253, 82, 158); 
+ font-family: 'Cabin Sketch', cursive;
+}
+
+h4 {
+ color: rgb(253, 82, 158); 
+ font-family: 'Cabin Sketch', cursive;
+}
+
+.container {
+  margin-top: 40px;
 }
