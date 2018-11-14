@@ -1,18 +1,22 @@
 .bg-image {
 background-attachment: fixed;
 height: 100vh;
-  background-image: url(/app/Images/cassette-background.jpg);
+  background-image: url("app/Images/cassette-background.jpg");
   background-size: cover;
 }
 
 /* How to put hover effect without changing button styling? */
-#get-music-button { 
+#get-music-button{ 
 font-family: 'Cabin Sketch', cursive;
 font-size: 35px;
 background-color: rgb(105, 253, 253);
 color: rgb(253, 82, 158);
 border: 2px solid rgb(253, 82, 158); 
 height: 75px;
+}
+#get-music-button:hover {
+  color: rgb(105, 253, 253);
+  background-color: rgb(253, 82, 158);
 }
 
 
@@ -43,26 +47,28 @@ color: rgb(253, 82, 158);
 margin-top: 38px;
 margin-left: 40px;
 }
-h1 {
- color: rgb(253, 82, 158); 
- font-family: 'Cabin Sketch', cursive;
+
+.info {
+  font-family: 'Cabin Sketch', cursive;
+font-size: 15px;
+color: rgb(168, 50, 103);
+background-color: rgba(245, 58, 214, 0.267);
+margin-bottom: 10px;
 }
 
-h2 {
- color: rgb(253, 82, 158); 
- font-family: 'Cabin Sketch', cursive;
+.info:hover {
+  color: rgb(2, 2, 2);
+transform: scale(1.02); 
+background-color: rgba(230, 6, 242, 0.488);
 }
 
-h3 {
- color: rgb(253, 82, 158); 
- font-family: 'Cabin Sketch', cursive;
-}
-
-h4 {
- color: rgb(253, 82, 158); 
- font-family: 'Cabin Sketch', cursive;
-}
 
 .container {
   margin-top: 40px;
 }
+
+audio {
+  margin-top:95px;
+  float: right;
+}
+

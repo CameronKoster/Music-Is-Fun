@@ -10,16 +10,13 @@ function drawSongs(results) {
   let template = ""
   results.forEach(song => {
     template += `
-    <div class="col-6">
+    <div class="col-12 info">
     <img src="${song.albumArt}">
-    <h1>${song.artist}</h1>
-    <h2>${song.title}</h2>
-    <h3>${song.collection}</h3>
-    <h4>${song.price}</h4>
     <audio controls>
     <source src="${song.preview}" type="audio/mp3">
     <source src="${song.preview}" type="audio/ogg">
     </audio>
+    <div>${song.artist} | ${song.title} | ${song.collection} | $${song.price}</div>
     </div>
   `
   })
